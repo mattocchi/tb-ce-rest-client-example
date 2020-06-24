@@ -34,7 +34,7 @@ public class RestClientExample {
         EntityRelation relation = new EntityRelation();
         relation.setFrom(asset.getId());
         relation.setTo(device.getId());
-        relation.setType("Contains");
+        relation.setType(EntityRelation.CONTAINS_TYPE);
         client.saveRelation(relation);
     }
 }
